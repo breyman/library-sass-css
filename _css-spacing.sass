@@ -1,0 +1,27 @@
+// _css-spacing.sass
+// custom set of items to be used for various padding, etc.
+// used in bulma and in other web design situations
+
+$spacing-sizes: (0,5,10,15,20,30,50)
+$spacing-positions: ('top','left','bottom','right')
+
+@each $spacing-size in $spacing-sizes
+  .has-top-margin-#{$spacing-size}
+    margin-top: $spacing-size + px
+  .has-top-padding-#{$spacing-size}
+    padding-top: $spacing-size + px
+
+  .has-bottom-margin-#{$spacing-size}
+    margin-bottom: $spacing-size + px
+  .has-bottom-padding-#{$spacing-size}
+    padding-bottom: $spacing-size + px
+
+  .has-left-margin-#{$spacing-size}
+    margin-left: $spacing-size + px
+  .has-left-padding-#{$spacing-size}
+    padding-left: $spacing-size + px
+
+  .has-right-margin-#{$spacing-size}
+    margin-right: $spacing-size + px
+  .has-right-padding-#{$spacing-size}
+    padding-right: $spacing-size + px
